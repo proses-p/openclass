@@ -1,0 +1,13 @@
+services:
+   - type: web
+   name: openclass-app
+   env: python
+   buildCommand: "./build.sh"
+   startCommand: "gunicorn openclass.wsgi:application"
+   plan: starter
+   autoDeploy: true
+   envVars:
+      - key: DJANGO_SETTINGS_MODULE
+      - key: openclass.settings
+      - key: PYTHON_VERSION
+      - key: 3.10.13
