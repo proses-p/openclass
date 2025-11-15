@@ -8,6 +8,10 @@ services:
    autoDeploy: true
    envVars:
       - key: DJANGO_SETTINGS_MODULE
-      - key: openclass.settings
+        value: openclass.settings
       - key: PYTHON_VERSION
-      - key: 3.10.13
+        value: 3.10.13
+      - key: SECRET_KEY
+        value: django-insecure-8&#_v7a(vs7*ht0(30a-es^sg1ufes+b3##&(-frbtt5&eih)b
+      - key: DEBUG
+        value: "False"
