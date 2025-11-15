@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial;
+                background: #FAEBD7;
+            }
+            h1 {
+                text-align: center;
+                color: green;
+            }
+            .container h2 {
+                text-align: center;
+                color: green;
+                padding: 14px;
+            }
+            .container p {
+                text-align: center;
+                color: green;
+                padding: 14px;
+            }
+            .container a {
+                color: green;
+                font-size: 15px;
+                text-align: center;
+                text-decoration: none;
+                padding-top: 9px;
+                width: 100%;
+                height: 300px;
+                overflow: hidden;
+            }
+            .banner-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .footer {
+                background: #151A22;
+                padding: 30px;
+            }
+            .section-one {
+                padding: 13px;
+            }
+            .section-one a {
+                text-decoration: none;
+                color: #FAEBD7;
+                display: block;
+                padding: 8px;
+                cursor: pointer;
+            }
+            .section-one a:hover {
+                color: green;
+            }
+            .section-one h2 {
+                color: green;
+            }
+            .section-two {
+                padding: 13px;
+            }
+            .section-two p {
+                color: #2F4F412;
+                font-size: 19px;
+            }
+            .section-two h2 {
+                color: green;
+            }
+            .info {
+                padding: 6px;
+            }
+            .info h2 {
+                color: green;
+            }
+            .info p {
+                color: #FAEBD7;
+                padding: 3px;
+                text-align: left;
+            }
+            .info a {
+                color: #FAEBD7;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .info a:hover {
+                color: green;
+            }
+            .add-info {
+                text-align: center;
+                color: #FAEBD7;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>OpenClass hub</h1>
+        <div class="container">
+            <h2>Higher Education Learning Materials</h2>
+            <p>Access pastpaper for various level to archieve your goals</p>
+            <a href="{% url 'pastpaper' %}">Click >>> <u>resources</u></a>
+            <img src="{% static 'resources/img/file_00000000b9b4722fa8ecec9dcea736d1 (1).png' %}" alt="Home Banner" class="banner-img">
+        </div>
+        <div class="footer">
+            <div class="section-one">
+                <h2>Quick links</h2>
+                <a href="{% url 'pastpaper' %}">Choose level</a>
+                <a href="{% url 'pastpaper' %}">Universities</a>
+                <a href="{% url 'pastpaper' %}">Schools/faculties</a>
+                <a href="{% url 'home' %}">Home</a>
+            </div>
+            <div class="section-two">
+                <h2>Summary</h2>
+                <p>This Web application is designed to simplify learning in various courses, there are many past papers within this web were students can easy access and read them according to the course taught in a specific semester, <br>
+                   Dear, students access pastpapers and other materials for easy learning, <br>
+                    Open and select your year and level of study, then select your specific university to view the colleges and department found from there you can download any material/pastpaper you need to study.
+            </div>
+            <div class="info">
+                <h2>Contact</h2>
+                <p>+255622231670</p>
+                <p>+255780686067</p>
+                <p>+255655205839</p>
+                <h2>Send email via</h2>
+                <a href="mailto:prosesprojestus0@gmail.com">prosesprojestus0@gmail.com</a>
+            </div>
+            <div class="add-info">
+                <p>&copy; openclass | proses 2025</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+# ignore media files
+/media/
+
+# ignore staticfiles collected by render
+/staticfiles/
+
+# python caches
+__pycache__/
+*/__pycache__/
+*.__pyc
+
+# sqlite database(optional)
+db.sqlite3
+
+# env files
+.env
+*.env

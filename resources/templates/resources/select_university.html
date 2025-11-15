@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>uni</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial;
+                background: #FAEBD7;
+            }
+            header {
+                padding: 19px;
+                text-align: center;
+                color: white;
+                background: #8B4513;
+            }
+            .container {
+                display: block;
+                gap: 19px;
+                padding: 19px;
+            }
+            .container ul, li {
+                padding: 19px;
+            }
+            .container a {
+                text-decoration: none;
+                color: #8B4513;
+            }
+        </style>
+    </head>
+    <body>
+        <header>select university</header>
+        <div class="container">
+          <ul>
+              {% for uni in universities %}
+                <li>
+                   <a href="{% url 'select_faculty' level uni.id %}">{{ uni.name }}</a> - {{ uni.lacation }}
+                 </li>
+              {% empty %}
+                  <p>No universities found!</p>
+              {% endfor %}
+          </ul>
+         </div>
+    </body>
+</html>
+
+

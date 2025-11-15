@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fac</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial;
+                background: #FAEBD7;
+            }
+            header {
+                padding: 19px;
+                text-align: center;
+                color: white;
+                background: #8B4513;
+            }
+            .container {
+                display: block;
+                gap: 19px;
+                padding: 19px;
+            }
+            .container ul, li {
+                padding: 19px;
+            }
+            .container a {
+                text-decoration: none;
+                color: #8B4513;
+            }
+        </style>
+    </head>
+    <dody>
+        <header>{{ university.name }}</header>
+        <div class="container">
+        <ul>
+           {% for faculty in faculties %}
+              <li>
+                 <a href="{% url 'pastpaper_level' level faculty.id %}">{{ faculty.name }}</a>
+                 
+              </li>
+            {% empty %}
+                <p>No faculties available for this university</p>
+            {% endfor %}
+        </ul>
+        </div>
+    </dody>
+</html>
