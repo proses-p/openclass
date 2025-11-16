@@ -2,7 +2,7 @@
 /media/
 
 # ignore staticfiles collected by render
-/staticfiles/
+
 
 # python caches
 __pycache__/
