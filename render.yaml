@@ -15,3 +15,7 @@ services:
         value: django-insecure-8&#_v7a(vs7*ht0(30a-es^sg1ufes+b3##&(-frbtt5&eih)b
       - key: DEBUG
         value: "False"
+      - key: DATABASE_URL
+        fromDatabase:
+            name: openclass-db
+            property: connectionString
