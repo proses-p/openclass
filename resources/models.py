@@ -18,7 +18,7 @@ class Course(models.Model):
 # faculty models
 class Faculty(models.Model):
     university = models.ForeignKey(University, on_delete=models.CASCADE, related_name='faculties', null=True)
-    name = models.CharField(null=True)
+    name = models.CharField(max_length=100, null=True)
     def __str__(self):
         return f"{self.name} ({self.university.name})"
 
