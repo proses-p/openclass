@@ -19,7 +19,11 @@ services:
         fromDatabase:
             name: openclass-db
             property: connectionString
+    databases:
+      - openclass-db
             
 databases:
     - name: openclass-db
+      databaseName: openclass-db
+      user: openclass_db_user
      
