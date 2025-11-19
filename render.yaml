@@ -20,7 +20,7 @@ services:
             name: openclass-db
             property: connectionString
     databases:
-      - openclass-db
+      - name: openclass-db
             
 databases:
     - name: openclass-db
