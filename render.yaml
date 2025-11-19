@@ -4,7 +4,7 @@ services:
    env: python
    buildCommand: "./build.sh"
    startCommand: "gunicorn openclass.wsgi:application"
-   plan: starter
+   plan: free
    autoDeploy: true
    envVars:
       - key: DJANGO_SETTINGS_MODULE
