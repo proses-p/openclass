@@ -37,7 +37,7 @@
           <ul>
               {% for uni in universities %}
                 <li>
-                   <a href="{% url 'select_faculty' level uni.id %}">{{ uni.name }}</a> - {{ uni.lacation }}
+                   <a href="{% url 'select_faculty' level uni.id %}">{{ uni.name }}</a> - {{ uni.location }}
                  </li>
               {% empty %}
                   <p>No universities found!</p>
