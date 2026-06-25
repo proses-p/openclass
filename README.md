@@ -44,7 +44,7 @@ It is designed to make learning materials easily accessible in one centralized s
 ##  Installation & Setup
 
 ### 1. Clone repository
-git clone https://github.com/yourusername/openclass.git
+git clone https://github.com/proses-p/openclass.git
 cd openclass
 
 ### 2. Create virtual environment
