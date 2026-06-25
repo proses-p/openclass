@@ -76,10 +76,12 @@ WSGI_APPLICATION = 'openclass.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = "postgresql://postgres.sdvqvnjrhstkevbqlyxg:mpTuCvbwTVDVen2a@aws-0-eu-west-1.pooler.supabase.com:6543/postgres"
 if DATABASE_URL:
     DATABASES = {
-        'default': dj_database_url.parse(DATABASE_URL)
+        'default': dj_database_url.parse(DATABASE_URL,
+                                         conn_max_age=600,
+        ssl_require=True)
     }
 else:
     DATABASES = {
